@@ -397,6 +397,32 @@
             animation: bounce 2s infinite;
         }
 
+        /* Cinematic Images */
+        .cinematic-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 40px;
+        }
+        .cinematic-image-inner {
+            width: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 80px rgba(0,0,0,0.8);
+            background: #111;
+        }
+        .cinematic-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        .cinematic-image:hover img {
+            transform: scale(1.02);
+        }
+
         /* Social Proof */
         .social-proof {
             width: 100%;
@@ -1305,6 +1331,12 @@
     </section>
 
     <!-- SECTION 4 — FEATURES -->
+    <div class="cinematic-image fade-up">
+        <div class="cinematic-image-inner">
+            <img src="assets/Gemini_Generated_Image_3olvd13olvd13olv.png" alt="Mira Smart Mirror in action">
+        </div>
+    </div>
+
     <section class="section">
         <div class="section-label fade-up">WHAT MIRA CAN DO</div>
         <h2 class="section-title fade-up">Not just a mirror.<span>An intelligent companion.</span></h2>
@@ -1427,6 +1459,12 @@
     </section>
 
     <!-- SECTION 5 — HOW IT WORKS -->
+    <div class="cinematic-image fade-up">
+        <div class="cinematic-image-inner">
+            <img src="assets/Gemini_Generated_Image_gx5i76gx5i76gx5i.png" alt="Mira Smart Mirror hardware detail">
+        </div>
+    </div>
+
     <section class="setup fade-up">
         <div class="section-label">THE SETUP</div>
         <h2 class="setup-title">Ready in 3 minutes.</h2>
@@ -1452,6 +1490,12 @@
     </section>
 
     <!-- SECTION 6 — WAITLIST FORM -->
+    <div class="cinematic-image fade-up">
+        <div class="cinematic-image-inner">
+            <img src="assets/Gemini_Generated_Image_i1mo2ii1mo2ii1mo.png" alt="Mira Smart Mirror lifestyle">
+        </div>
+    </div>
+
     <section id="waitlist-section" class="waitlist fade-up">
         <div class="section-label">EARLY ACCESS</div>
         <h2 class="section-title">Be the first to own Mira.</h2>

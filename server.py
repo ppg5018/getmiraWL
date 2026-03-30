@@ -53,8 +53,8 @@ class WaitlistHandler(SimpleHTTPRequestHandler):
             self.end_headers()
 
 if __name__ == '__main__':
-    port = 8080
-    server_address = ('', port)
+    port = int(os.environ.get('PORT', 8080))
+    server_address = ('0.0.0.0', port)
     print(f"Starting Waitlist Server on http://localhost:{port}")
     print("All form submissions will be saved to waitlist.csv")
     httpd = HTTPServer(server_address, WaitlistHandler)

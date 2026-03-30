@@ -1176,8 +1176,8 @@
             const btnText = document.getElementById('btn-text');
             const successState = document.getElementById('success-state');
 
-            // LOCAL SERVER INTEGRATION
-            // Submits to the local Python server (/submit endpoint) to save to waitlist.csv
+            // FORMSPREE INTEGRATION
+            // Submits to your free Formspree dashboard permanently!
             
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
@@ -1191,13 +1191,17 @@
                 submitBtn.classList.add('loading');
                 btnText.innerText = 'Joining...';
 
-                const submission = { name, email, budget, timestamp: new Date().toISOString() };
+                // IMPORTANT: Replace 'YOUR_FORM_ID' with the Form ID you get from Formspree.io
+                const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID';
 
-                // Send data to our local Python server
-                fetch('/submit', {
+                // Send data seamlessly directly to Formspree
+                fetch(FORMSPREE_URL, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(submission)
+                    headers: { 
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({ name, email, budget })
                 })
                 .then(res => {
                     if (!res.ok) throw new Error('Network error');
@@ -1205,15 +1209,16 @@
                 })
                 .then(data => {
                     // Store submission in local storage
+                    const submission = { name, email, budget, timestamp: new Date().toISOString() };
                     localStorage.setItem('mira_waitlist', JSON.stringify(submission));
                     
-                    // Show success state
+                    // Show success state organically
                     form.style.display = 'none';
                     successState.style.display = 'flex';
                 })
                 .catch(err => {
                     console.error('Submission error:', err);
-                    alert("There was an error saving your entry. Please try again or check the server status.");
+                    alert("Please replace 'YOUR_FORM_ID' in the code with your actual Formspree ID to enable submissions.");
                     submitBtn.disabled = false;
                     submitBtn.classList.remove('loading');
                     btnText.innerText = 'Join the Waitlist →';

@@ -1,2 +1,0 @@
-# Mira landing page uses only Python standard libraries
-# No external dependencies required

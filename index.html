@@ -814,6 +814,39 @@
             transform: scale(1.05);
         }
 
+        /* Intelligent Vision */
+        .vision-section { max-width: 1100px; margin: 0 auto; padding: 120px 40px; background: #000000; }
+        .vision-header { text-align: center; }
+        .vision-label { font-size: 11px; letter-spacing: 4px; color: #4ecdc4; text-transform: uppercase; margin-bottom: 20px; }
+        .vision-title { font-size: 56px; font-weight: 100; line-height: 1.1; color: white; letter-spacing: -1px; }
+        .vision-title span { color: rgba(255,255,255,0.4); display: block; }
+        .vision-sub { font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.5); max-width: 560px; margin: 24px auto 80px; line-height: 1.7; }
+        
+        .vision-block { display: flex; align-items: center; gap: 80px; margin-bottom: 100px; }
+        .vision-block.reverse { flex-direction: row-reverse; }
+        .vision-img-col { flex: 1; display: flex; justify-content: flex-start; }
+        .vision-block.reverse .vision-img-col { justify-content: flex-end; }
+        .vision-img-col img { width: 100%; max-width: 500px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); display: block; }
+        .shadow-teal { box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 40px rgba(78,205,196,0.06); }
+        .shadow-red { box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 40px rgba(255,60,0,0.06); }
+        .shadow-dim { box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 40px rgba(78,205,196,0.04); }
+        
+        .vision-text-col { flex: 1; text-align: left; }
+        .vision-pill { display: inline-block; background: rgba(78,205,196,0.08); border: 1px solid rgba(78,205,196,0.25); color: #4ecdc4; font-size: 10px; letter-spacing: 3px; padding: 6px 14px; border-radius: 20px; margin-bottom: 24px; }
+        .vision-pill.red { background: rgba(255,107,107,0.08); border: 1px solid rgba(255,107,107,0.25); color: #ff6b6b; }
+        
+        .vision-h3 { font-size: 36px; font-weight: 200; color: white; line-height: 1.2; margin-bottom: 20px; letter-spacing: -0.5px; }
+        .vision-p { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 32px; }
+        
+        .vision-bullet { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+        .vision-dot { width: 6px; height: 6px; background: #4ecdc4; border-radius: 50%; flex-shrink: 0; }
+        .vision-bullet-text { font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 300; }
+        
+        .privacy-bar { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 20px 32px; display: flex; align-items: center; gap: 16px; margin-top: 40px; max-width: 700px; margin-left: auto; margin-right: auto; text-align: left; }
+        .privacy-icon { font-size: 16px; flex-shrink: 0; }
+        .privacy-title { font-size: 13px; font-weight: 500; color: white; margin-bottom: 4px; }
+        .privacy-desc { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+
         /* How it works */
         .setup {
             padding: 100px 40px;
@@ -1227,6 +1260,12 @@
                 margin: 0 auto;
             }
 
+            .vision-section { padding: 80px 24px; }
+            .vision-title, .vision-h3 { font-size: 36px; }
+            .vision-block, .vision-block.reverse { flex-direction: column; gap: 40px; margin-bottom: 60px; }
+            .vision-img-col img { width: 100%; max-width: unset; }
+            .vision-text-col, .vision-img-col { width: 100%; }
+
             .phone-mockup {
                 width: 100%;
                 max-width: 200px;
@@ -1462,6 +1501,70 @@
                     minutes.</div>
             </div>
         </div>
+
+    <!-- SECTION INTELLIGENT VISION -->
+    <section class="vision-section">
+        <!-- Header -->
+        <div class="vision-header fade-up">
+            <div class="vision-label">INTELLIGENT VISION</div>
+            <h2 class="vision-title">Your mirror sees.<span>So you never have to worry.</span></h2>
+            <p class="vision-sub">A hidden camera inside Mira's frame watches over your space 24/7. Recognises your face. Alerts you the moment something feels wrong.</p>
+        </div>
+
+        <!-- Block 1 -->
+        <div class="vision-block">
+            <div class="vision-img-col fade-up">
+                <img src="assets/cam/photo1.png" class="vision-img shadow-teal" alt="Face Recognition">
+            </div>
+            <div class="vision-text-col fade-up" style="transition-delay: 0.1s;">
+                <div class="vision-pill">FACE RECOGNITION</div>
+                <h3 class="vision-h3">Knows you the moment you walk in.</h3>
+                <p class="vision-p">Mira's hidden camera scans your face the instant you stand in front of it. No PIN. No touch. No wake word needed. Just you — and your mirror instantly loads your personal profile, your calendar, your music, your preferences. Like a home that already knows you.</p>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Recognises up to 6 family members</div></div>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Loads your personal dashboard in 1 second</div></div>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Works in dim light and complete darkness</div></div>
+            </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="vision-block reverse">
+            <div class="vision-img-col fade-up">
+                <img src="assets/cam/photo2.png" class="vision-img shadow-red" alt="Motion Detection">
+            </div>
+            <div class="vision-text-col fade-up" style="transition-delay: 0.1s;">
+                <div class="vision-pill red">MOTION DETECTION</div>
+                <h3 class="vision-h3">Instant alerts. Even at 3AM.</h3>
+                <p class="vision-p">When Mira detects unexpected movement in your room, it acts immediately. A WhatsApp photo alert lands on your phone within seconds — showing exactly what the camera saw. Whether you are asleep in the next room or traveling across the city, your home stays protected.</p>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Sends WhatsApp photo alert instantly</div></div>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Distinguishes known faces from strangers</div></div>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Records and saves motion clips to SD card</div></div>
+            </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="vision-block">
+            <div class="vision-img-col fade-up">
+                <img src="assets/cam/photo3.png" class="vision-img shadow-dim" alt="Live Surveillance">
+            </div>
+            <div class="vision-text-col fade-up" style="transition-delay: 0.1s;">
+                <div class="vision-pill">LIVE SURVEILLANCE</div>
+                <h3 class="vision-h3">Your room. Live. From anywhere.</h3>
+                <p class="vision-p">Open the Mira companion app and tap Live View — your mirror's camera streams directly to your phone over WiFi. 105° wide angle. 1080P. Full night vision. See every corner of your room in complete darkness. No subscription. No cloud fees. Completely private — footage stays on your device.</p>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">105° wide angle covers your full room</div></div>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">Night vision works in complete darkness</div></div>
+                <div class="vision-bullet"><div class="vision-dot"></div><div class="vision-bullet-text">No cloud subscription — fully private</div></div>
+            </div>
+        </div>
+
+        <!-- Privacy Bar -->
+        <div class="privacy-bar fade-up">
+            <div class="privacy-icon">🔒</div>
+            <div>
+                <div class="privacy-title">Your privacy is built in.</div>
+                <div class="privacy-desc">Camera indicator LED lights up when active. Disable anytime from the companion app. Footage never leaves your device.</div>
+            </div>
+        </div>
+    </section>
 
         <div class="wide-card fade-up">
             <div class="wide-c-left">

@@ -414,13 +414,14 @@
         }
         .cinematic-image img {
             width: 100%;
-            height: auto;
+            max-height: 75vh;
             display: block;
             object-fit: cover;
+            object-position: center;
             transition: transform 0.7s ease;
         }
         .cinematic-image:hover img {
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
 
         /* Social Proof */

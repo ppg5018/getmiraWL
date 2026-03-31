@@ -847,6 +847,52 @@
         .privacy-title { font-size: 13px; font-weight: 500; color: white; margin-bottom: 4px; }
         .privacy-desc { font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.6; }
 
+        /* Fitness Section */
+        #fitness-section { padding: 120px 40px; background: #000; width: 100%; max-width: none; }
+        .fit-inner { max-width: 1100px; margin: 0 auto; }
+        .fit-label { font-size: 11px; letter-spacing: 4px; color: #4ecdc4; text-transform: uppercase; text-align: center; margin-bottom: 20px; display: block; }
+        .fit-title-line1 { font-size: 56px; font-weight: 100; color: white; text-align: center; display: block; letter-spacing: -1px; line-height: 1.05; }
+        .fit-title-line2 { font-size: 56px; font-weight: 100; color: rgba(255,255,255,0.35); text-align: center; display: block; letter-spacing: -1px; line-height: 1.05; margin-bottom: 24px; }
+        .fit-sub { font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.5); max-width: 520px; margin: 0 auto 80px; line-height: 1.7; text-align: center; display: block; }
+        
+        .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 80px; align-items: start; }
+        .fit-card-wrap { display: flex; flex-direction: column; gap: 0; box-shadow: 0 0 0 1px rgba(255,60,0,0.08), 0 40px 60px rgba(0,0,0,0.5); border-radius: 16px; margin-top: auto; }
+        .fit-card-wrap.blue-theme { box-shadow: 0 0 0 1px rgba(78,205,196,0.06), 0 40px 60px rgba(0,0,0,0.5); }
+        .fit-img { width: 100%; border-radius: 16px 16px 0 0; display: block; object-fit: cover; }
+        
+        .fit-info { background: #0f0f0f; border: 1px solid rgba(255,255,255,0.07); border-top: none; border-radius: 0 0 16px 16px; padding: 28px 28px 32px; flex: 1; }
+        .fit-top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        
+        .fit-badge { display: inline-block; background: rgba(255,60,0,0.1); border: 1px solid rgba(255,60,0,0.25); color: #FF3C00; font-size: 10px; letter-spacing: 2px; padding: 5px 12px; border-radius: 20px; }
+        .fit-badge.blue { background: rgba(78,205,196,0.08); border: 1px solid rgba(78,205,196,0.2); color: #4ecdc4; }
+        
+        .fit-led { display: flex; align-items: center; gap: 6px; }
+        .fit-led-dot { width: 8px; height: 8px; background: #FF3C00; border-radius: 50%; box-shadow: 0 0 6px #FF3C00; }
+        .fit-led-dot.blue { background: #4ecdc4; box-shadow: 0 0 6px #4ecdc4; }
+        .fit-led-text { font-size: 11px; color: rgba(255,255,255,0.4); }
+        
+        .fit-card-title { font-size: 22px; font-weight: 300; color: white; margin-bottom: 10px; }
+        .fit-card-desc { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.7; margin-bottom: 24px; }
+        
+        .fit-stats-row { display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; }
+        .fit-stat { flex: 1; text-align: center; border-right: 1px solid rgba(255,255,255,0.06); }
+        .fit-stat:last-child { border-right: none; }
+        .fit-stat-val { font-size: 22px; font-weight: 300; color: #FF3C00; display: block; margin-bottom: 4px; }
+        .fit-stat-val.blue { color: #4ecdc4; }
+        .fit-stat-label { font-size: 10px; letter-spacing: 1px; color: rgba(255,255,255,0.3); text-transform: uppercase; display: block; }
+        
+        .fit-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 0; }
+        .fit-pill { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 8px 18px; font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.5); white-space: nowrap; }
+        
+        .voice-strip { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px 40px; margin-top: 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+        .voice-left-label { font-size: 9px; letter-spacing: 3px; color: rgba(255,255,255,0.3); display: block; margin-bottom: 8px; }
+        .voice-left-title { font-size: 22px; font-weight: 300; color: white; }
+        .voice-center { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+        .voice-cmd { background: #0f0f0f; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 8px 14px; font-size: 12px; color: rgba(255,255,255,0.6); font-style: italic; font-weight: 300; }
+        .voice-cmd-dot { display: inline-block; width: 5px; height: 5px; background: #4ecdc4; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+        .voice-btn { background: #4ecdc4; color: #000; font-size: 13px; font-weight: 500; padding: 12px 24px; border-radius: 20px; border: none; cursor: pointer; text-decoration: none; }
+        .voice-btn:hover { opacity: 0.85; }
+
         /* How it works */
         .setup {
             padding: 100px 40px;
@@ -1266,6 +1312,13 @@
             .vision-img-col img { width: 100%; max-width: unset; }
             .vision-text-col, .vision-img-col { width: 100%; }
 
+            #fitness-section { padding: 80px 24px; }
+            .fit-title-line1, .fit-title-line2 { font-size: 36px; }
+            .fit-grid { grid-template-columns: 1fr; gap: 40px; }
+            .fit-stat-val { font-size: 18px; }
+            .fit-stat-label { font-size: 9px; }
+            .voice-strip { flex-direction: column; text-align: center; padding: 28px 24px; }
+
             .phone-mockup {
                 width: 100%;
                 max-width: 200px;
@@ -1562,6 +1615,107 @@
             <div>
                 <div class="privacy-title">Your privacy is built in.</div>
                 <div class="privacy-desc">Camera indicator LED lights up when active. Disable anytime from the companion app. Footage never leaves your device.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITNESS MODE SECTION -->
+    <section id="fitness-section">
+        <div class="fit-inner">
+            <div class="fade-up">
+                <span class="fit-label">FITNESS MODE</span>
+                <span class="fit-title-line1">Your personal trainer.</span>
+                <span class="fit-title-line2">Built into your mirror.</span>
+                <span class="fit-sub">8 pre-built workouts. Real-time calorie tracking. Voice commands. LED backlight reacts to every rep — red when active, blue when resting. No gym needed.</span>
+            </div>
+
+            <div class="fit-grid">
+                <!-- CARD 1 -->
+                <div class="fit-card-wrap fade-up">
+                    <img src="assets/fitness/1.png" alt="Mira fitness mode active workout" class="fit-img">
+                    <div class="fit-info">
+                        <div class="fit-top-row">
+                            <div class="fit-badge">ACTIVE SET</div>
+                            <div class="fit-led">
+                                <div class="fit-led-dot"></div>
+                                <div class="fit-led-text">LED: Red</div>
+                            </div>
+                        </div>
+                        <div class="fit-card-title">Push Ups · Set 2 of 3</div>
+                        <div class="fit-card-desc">Mira counts your sets, tracks calories in real time, and coaches your form — completely hands-free.</div>
+                        <div class="fit-stats-row">
+                            <div class="fit-stat">
+                                <span class="fit-stat-val">186</span>
+                                <span class="fit-stat-label">CALORIES</span>
+                            </div>
+                            <div class="fit-stat">
+                                <span class="fit-stat-val">2/3</span>
+                                <span class="fit-stat-label">CURRENT SET</span>
+                            </div>
+                            <div class="fit-stat">
+                                <span class="fit-stat-val">0:42</span>
+                                <span class="fit-stat-label">TIMER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="fit-card-wrap blue-theme fade-up" style="transition-delay: 0.1s;">
+                    <img src="assets/fitness/2.png" alt="Mira fitness rest period countdown" class="fit-img">
+                    <div class="fit-info">
+                        <div class="fit-top-row">
+                            <div class="fit-badge blue">REST PERIOD</div>
+                            <div class="fit-led">
+                                <div class="fit-led-dot blue"></div>
+                                <div class="fit-led-text">LED: Blue</div>
+                            </div>
+                        </div>
+                        <div class="fit-card-title">Rest · 42 seconds remaining</div>
+                        <div class="fit-card-desc">The mirror counts down your rest, shows what is coming next, and pulses blue — so your body knows to recover, not stop.</div>
+                        <div class="fit-stats-row">
+                            <div class="fit-stat">
+                                <span class="fit-stat-val blue">8</span>
+                                <span class="fit-stat-label">WORKOUTS</span>
+                            </div>
+                            <div class="fit-stat">
+                                <span class="fit-stat-val blue">0:42</span>
+                                <span class="fit-stat-label">REST TIME</span>
+                            </div>
+                            <div class="fit-stat">
+                                <span class="fit-stat-val blue">500</span>
+                                <span class="fit-stat-label">GOAL KCAL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fit-pills fade-up">
+                <div class="fit-pill">8 pre-built workouts</div>
+                <div class="fit-pill">Real-time calorie tracking</div>
+                <div class="fit-pill">Voice controlled</div>
+                <div class="fit-pill">LED reacts to workout state</div>
+                <div class="fit-pill">Exercise GIF guidance</div>
+                <div class="fit-pill">Workout history & streaks</div>
+                <div class="fit-pill">Custom workout builder</div>
+                <div class="fit-pill">Works hands-free</div>
+            </div>
+
+            <div class="voice-strip fade-up">
+                <div>
+                    <span class="voice-left-label">SAY IT. MIRA DOES IT.</span>
+                    <span class="voice-left-title">Fully voice controlled.</span>
+                </div>
+                <div class="voice-center">
+                    <div class="voice-cmd"><span class="voice-cmd-dot"></span>Start HIIT workout</div>
+                    <div class="voice-cmd"><span class="voice-cmd-dot"></span>Next exercise</div>
+                    <div class="voice-cmd"><span class="voice-cmd-dot"></span>Skip rest</div>
+                    <div class="voice-cmd"><span class="voice-cmd-dot"></span>How many calories?</div>
+                </div>
+                <div>
+                    <a href="#waitlist-section" class="voice-btn">Join Waitlist →</a>
+                </div>
             </div>
         </div>
     </section>

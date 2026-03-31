@@ -791,6 +791,28 @@
             opacity: 0.3;
         }
 
+        .karaoke-image {
+            width: 280px;
+            border-radius: 20px;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #111;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        
+        .karaoke-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .karaoke-image:hover img {
+            transform: scale(1.05);
+        }
+
         /* How it works */
         .setup {
             padding: 100px 40px;
@@ -1211,6 +1233,12 @@
                 height: 300px;
             }
 
+            .karaoke-image {
+                width: 100%;
+                max-width: 260px;
+                margin: 0 auto;
+            }
+
             .steps {
                 flex-direction: column;
                 gap: 40px;
@@ -1454,6 +1482,17 @@
                     <div></div>
                     <div></div>
                 </div>
+            </div>
+        </div>
+
+        <div class="wide-card fade-up" style="margin-top: 24px;">
+            <div class="wide-c-left">
+                <div class="wide-label">PARTY EXPERIENCE</div>
+                <h3 class="wide-title">Immersive Karaoke Mode</h3>
+                <div class="wide-desc">Transform your room into a visual stage. Mira instantly syncs brilliantly animated scrolling lyrics perfectly to your Spotify playlists, complete with dynamic RGB lighting and a highly sensitive built-in microphone for the ultimate at-home concert vibe.</div>
+            </div>
+            <div class="karaoke-image">
+                <img src="assets/karaoke-mode.png" alt="Mira Karaoke Mode">
             </div>
         </div>
     </section>
